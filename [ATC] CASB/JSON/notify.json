@@ -1,0 +1,165 @@
+{
+  "serverVersion": "0.0.1",
+  "dateTime": "2014-06-25T00:00:00:000Z",
+  "result": "0",
+  "detatil": "",
+  "requested": {
+    "pageNo": 1,
+    "pageSize": 50,
+    "itemCount": 2,
+    "share_list": [
+      {
+        "share_code": 0,
+        "doc_code": 0,
+        "doc_name": "test.docx",
+        "view_url": "https://aaa.bbb.com/view/ccc",
+        "download_url": "https://aaa.bbb.com/download/ccc",
+        "sender_id": "wook81701@gmail.com",
+        "share_alarm_read": "true",
+        "receiver_ids": [
+          {
+            "email": "a@nicstech.com",
+            "user_id": "nics_0001",
+            "name": "jang wook",
+            "is_external": false,
+            "": {}
+          },
+          {
+            "email": "b@kukudocs.com",
+            "user_id": "",
+            "name": "pare yong mook",
+            "is_external": true
+          }
+        ]
+      },
+      {
+        "share_code": 1,
+        "doc_code": 1,
+        "doc_name": "test2.docx",
+        "view_url": "https://aaa.bbb.com/view/ccc2",
+        "download_url": "https://aaa.bbb.com/download/ccc2",
+        "sender_id": "wook81701@gmail.com",
+        "share_alarm_read": "true",
+        "receiver_ids": [
+          {
+            "email": "a@nicstech.com",
+            "user_id": "nics_0001",
+            "name": "jang wook",
+            "is_external": false,
+            "": {}
+          },
+          {
+            "email": "b2@kukudocs.com",
+            "user_id": "",
+            "name": "park yong mook",
+            "is_external": true
+          }
+        ]
+      }
+    ]
+  },
+  "completed": {
+    "pageNo": 1,
+    "pageSize": 50,
+    "itemCount": 2,
+    "share_list": [
+      {
+        "share_code": 2,
+        "doc_code": 0,
+        "doc_name": "test.docx",
+        "view_url": "https://aaa.bbb.com/view/ccc",
+        "download_url": "https://aaa.bbb.com/download/ccc",
+        "sender_id": "wook81701@gmail.com",
+        "share_alarm_read": "true",
+        "receiver_ids": [
+          {
+            "email": "a@nicstech.com",
+            "user_id": "nics_0001",
+            "name": "jang wook",
+            "is_external": false
+          },
+          {
+            "email": "b@kukudocs.com",
+            "user_id": "",
+            "name": "pare yong mook",
+            "is_external": true
+          }
+        ]
+      },
+      {
+        "share_code": 3,
+        "doc_code": 1,
+        "doc_name": "test2.docx",
+        "view_url": "https://aaa.bbb.com/view/ccc2",
+        "download_url": "https://aaa.bbb.com/download/ccc2",
+        "sender_id": "wook81701@gmail.com",
+        "receiver_ids": [
+          {
+            "email": "a@nicstech.com",
+            "user_id": "nics_0001",
+            "name": "jang wook",
+            "is_external": false
+          },
+          {
+            "email": "b2@kukudocs.com",
+            "user_id": "",
+            "name": "park yong mook",
+            "is_external": true
+          }
+        ]
+      }
+    ]
+  },
+  "rejected": {
+    "pageNo": 1,
+    "pageSize": 50,
+    "itemCount": 2,
+    "share_list": [
+      {
+        "share_code": 4,
+        "doc_code": 0,
+        "doc_name": "test.docx",
+        "view_url": "https://aaa.bbb.com/view/ccc",
+        "download_url": "https://aaa.bbb.com/download/ccc",
+        "sender_id": "wook81701@gmail.com",
+        "share_alarm_read": "true",
+        "receiver_ids": [
+          {
+            "email": "a@nicstech.com",
+            "user_id": "nics_0001",
+            "name": "jang wook",
+            "is_external": false
+          },
+          {
+            "email": "b@kukudocs.com",
+            "user_id": "",
+            "name": "pare yong mook",
+            "is_external": true
+          }
+        ]
+      },
+      {
+        "share_code": 5,
+        "doc_code": 1,
+        "doc_name": "test2.docx",
+        "view_url": "https://aaa.bbb.com/view/ccc2",
+        "download_url": "https://aaa.bbb.com/download/ccc2",
+        "sender_id": "wook81701@gmail.com",
+        "receiver_ids": [
+          {
+            "email": "a@nicstech.com",
+            "user_id": "nics_0001",
+            "name": "jang wook",
+            "is_external": false
+          },
+          {
+            "email": "b2@kukudocs.com",
+            "user_id": "",
+            "name": "park yong mook",
+            "is_external": true
+          }
+        ]
+      }
+    ]
+  }
+}

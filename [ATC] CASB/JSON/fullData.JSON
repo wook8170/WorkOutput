@@ -1,0 +1,539 @@
+{
+  "version": 3.1,
+  "dateTime": "2014-06-25T00:00:00.000Z",
+  "result": "0",
+  "detatil": "",
+  "metaShareStatus": {
+    "share_status": [
+      {
+        "share_status_code": 0,
+        "share_status_name": "결재 요청",
+        "share_status_description": ""
+      },
+      {
+        "share_status_code": 1,
+        "share_status_name": "결재 진행중",
+        "share_status_description": ""
+      },
+      {
+        "share_status_code": 2,
+        "share_status_name": "결재 완료",
+        "share_status_description": ""
+      },
+      {
+        "share_status_code": 3,
+        "share_status_name": "결재 반려",
+        "share_status_description": ""
+      }
+    ]
+  },
+  "metaPositionInfo": {
+    "position_info": [
+      {
+        "position_code": 0,
+        "position_name": "사원",
+        "position_description": ""
+      },
+      {
+        "position_code": 1,
+        "position_name": "대리",
+        "position_description": ""
+      },
+      {
+        "position_code": 2,
+        "position_name": "과장",
+        "position_description": ""
+      },
+      {
+        "position_code": 3,
+        "position_name": "차장",
+        "position_description": ""
+      },
+      {
+        "position_code": 4,
+        "position_name": "부장",
+        "position_description": ""
+      },
+      {
+        "position_code": 5,
+        "position_name": "이사",
+        "position_description": ""
+      },
+      {
+        "position_code": 6,
+        "position_name": "상무",
+        "position_description": ""
+      },
+      {
+        "position_code": 7,
+        "position_name": "전무",
+        "position_description": ""
+      },
+      {
+        "position_code": 8,
+        "position_name": "대표이사",
+        "position_description": ""
+      }
+    ]
+  },
+  "metaApprovalLine": {
+    "listType": "myBox",
+    "listCount": 3,
+    "listPageSize": 100,
+    "listPageNumber": 1,
+    "approval_line_info": [
+      {
+        "approval_line_code": 0,
+        "approval_line_person": [
+          {
+            "user_id": "nic001",
+            "user_email": "a@nictech.com",
+            "dept_code": "dept_001",
+            "position_code": "pos_0001"
+          },
+          {
+            "user_id": "nic001",
+            "user_email": "a@nictech.com",
+            "dept_code": "dept_001",
+            "position_code": "pos_0001"
+          },
+          {
+            "user_id": "nic001",
+            "user_email": "a@nictech.com",
+            "dept_code": "dept_001",
+            "position_code": "pos_0001"
+          }
+        ]
+      },
+      {
+        "approval_line_code": 1,
+        "approval_line_person": [
+          {
+            "user_id": "nic001",
+            "user_email": "a@nictech.com",
+            "dept_code": "dept_001",
+            "position_code": "pos_0001"
+          },
+          {
+            "user_id": "nic001",
+            "user_email": "a@nictech.com",
+            "dept_code": "dept_001",
+            "position_code": "pos_0001"
+          }
+        ]
+      },
+      {
+        "approval_line_code": 2,
+        "approval_line_person": [
+          {
+            "user_id": "nic001",
+            "user_email": "a@nictech.com",
+            "dept_code": "dept_001",
+            "position_code": "pos_0001"
+          },
+          {
+            "user_id": "nic001",
+            "user_email": "a@nictech.com",
+            "dept_code": "dept_001",
+            "position_code": "pos_0001"
+          },
+          {
+            "user_id": "nic001",
+            "user_email": "a@nictech.com",
+            "dept_code": "dept_001",
+            "position_code": "pos_0001"
+          }
+        ]
+      }
+    ]
+  },
+  "userInfo": {
+    "tenant_id": "t0001",
+    "user_email": "a@nicstech.com",
+    "user_id": "nics_001",
+    "user_name": "jang wook",
+    "user_nick": "서윤이 아빠",
+    "user_telno": "010-2808-8170",
+    "dept_code": "dept_001",
+    "policy_code": "pol_001",
+    "position_code": "pos_001",
+    "group_codes": [
+      "dept_001",
+      "dept_002",
+      "dept_003"
+    ],
+    "user_is_approval": true,
+    "approval_line_code": null,
+	
+    "transaction_code": 1234567890,
+    "transaction_time": "2014-06-25T00:00:00.000Z"
+  },
+  "myBox": {
+    "listType": "myBox",
+    "listCount": 3,
+    "listPageSize": 100,
+    "listPageNumber": 1,
+    "doc": [
+      {
+        "doc_code": 0,
+        "doc_name": "xxx.docx",
+        "doc_url": "https://xxx.xxx.xxx/xxx",
+        "doc_create_date": "2014-06-25T00:00:00.000Z",
+        "doc_modify_time": "2014-06-25T00:00:00.000Z",
+        "doc_size": 100,
+        "doc_security_result": true,
+        "doc_is_deleted": false,
+        "doc_share_count": 10,
+        "doc_download_count": 10,
+        "is_favorite": false
+      },
+      {
+        "doc_code": 1,
+        "doc_name": "xxx.docx",
+        "doc_url": "https://xxx.xxx.xxx/xxx",
+        "doc_create_date": "2014-06-25T00:00:00.000Z",
+        "doc_modify_time": "2014-06-25T00:00:00.000Z",
+        "doc_size": 100,
+        "doc_security_result": true,
+        "doc_is_deleted": false,
+        "doc_share_count": 10,
+        "doc_download_count": 10,
+        "is_favorite": false
+      },
+      {
+        "doc_code": 2,
+        "doc_name": "xxx.docx",
+        "doc_url": "https://xxx.xxx.xxx/xxx",
+        "doc_create_date": "2014-06-25T00:00:00.000Z",
+        "doc_modify_time": "2014-06-25T00:00:00.000Z",
+        "doc_size": 100,
+        "doc_security_result": "bool true",
+        "doc_is_deleted": false,
+        "doc_share_count": 10,
+        "doc_download_count": 10,
+        "is_favorite": false
+      },
+      {
+        "doc_code": 3,
+        "doc_name": "xxx.docx",
+        "doc_url": "https://xxx.xxx.xxx/xxx",
+        "doc_create_date": "2014-06-25T00:00:00.000Z",
+        "doc_modify_time": "2014-06-25T00:00:00.000Z",
+        "doc_size": 100,
+        "doc_security_result": true,
+        "doc_is_deleted": false,
+        "doc_share_count": 10,
+        "doc_download_count": 10,
+        "is_favorite": false
+      }
+    ]
+  },
+  "inBox": {
+    "listType": "outBox",
+    "listCount": 2,
+    "listPageSize": 100,
+    "listPageNumber": 1,
+    "doc": [
+      {
+        "doc_code": 3,
+        "doc_name": "xxx.docx",
+        "doc_url": "https://xxx.xxx.xxx/xxx",
+        "doc_create_date": "2014-06-25T00:00:00.000Z",
+        "doc_modify_time": "2014-06-25T00:00:00.000Z",
+        "doc_size": 100,
+        "is_favorite": false,
+        "share_code": 0,
+        "share_status_code": 0,
+        "share_alarm_read": 0,
+        "send_user_id": "cjsong@nicstech.com",
+        "user_id": "nic001",
+        "user_email": "a@nictech.com",
+        "dept_code": "dept_001",
+        "position_code": "pos_0001",
+        "approval_line_code": 0
+      },
+      {
+        "doc_code": 3,
+        "doc_name": "xxx.docx",
+        "doc_url": "https://xxx.xxx.xxx/xxx",
+        "doc_create_date": "2014-06-25T00:00:00.000Z",
+        "doc_modify_time": "2014-06-25T00:00:00.000Z",
+        "doc_size": 100,
+        "is_favorite": false,
+        "share_code": 0,
+        "share_status_code": 0,
+        "share_alarm_read": 0,
+        "send_user_id": "cjsong@nicstech.com",
+        "user_id": "nic001",
+        "user_email": "a@nictech.com",
+        "dept_code": "dept_001",
+        "position_code": "pos_0001",
+        "approval_line_code": 0
+      }
+    ]
+  },
+  "outBox": {
+    "listType": "outBox",
+    "listCount": 2,
+    "listPageSize": 100,
+    "listPageNumber": 1,
+    "doc": [
+      {
+        "doc_code": 3,
+        "doc_name": "xxx.docx",
+        "doc_url": "https://xxx.xxx.xxx/xxx",
+        "doc_create_date": "2014-06-25T00:00:00.000Z",
+        "doc_modify_time": "2014-06-25T00:00:00.000Z",
+        "doc_size": 100,
+        "is_favorite": false,
+        "share_code": 0,
+        "share_status_code": 0,
+        "share_alarm_read": 0,
+        "external_user_email": "",
+        "current_approver": "장욱",
+        "approval_line_code": 0,
+        "recv_user_ids": [
+          {
+            "send_user_id": {},
+            "user_id": "nic001",
+            "user_email": "a@nictech.com",
+            "dept_code": "dept_001",
+            "position_code": "pos_0001"
+          },
+          {
+            "user_id": "nic002",
+            "user_email": "b@nictech.com",
+            "dept_code": "dept_001",
+            "position_code": "pos_0001"
+          }
+        ]
+      },
+      {
+        "doc_code": 3,
+        "doc_name": "xxx.docx",
+        "doc_url": "https://xxx.xxx.xxx/xxx",
+        "doc_create_date": "2014-06-25T00:00:00.000Z",
+        "doc_modify_time": "2014-06-25T00:00:00.000Z",
+        "doc_size": 100,
+        "is_favorite": false,
+        "share_code": 0,
+        "share_status_code": 0,
+        "share_alarm_read": 0,
+        "external_user_email": "admin@kukudocs.com",
+        "current_approver": "장욱",
+        "approval_line_code": 0,
+        "recv_ids": []
+      }
+    ]
+  },
+  "alarm": {
+    "requested": {
+      "listType": "requested",
+      "listCount": 1,
+      "listPageSize": 100,
+      "listPageNumber": 1,
+      "share_request": [
+        {
+          "doc_code": 0,
+          "share_code": 0,
+          "current_approver": "장욱",
+          "approval_line_code": 0,
+          "send_user_id": {
+            "user_id": "nic001",
+            "user_email": "a@nictech.com",
+            "dept_code": "dept_001",
+            "position_code": "pos_0001"
+          },
+          "recv_user_ids": [
+            {
+              "user_id": "nic001",
+              "user_email": "a@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001"
+            },
+            {
+              "user_id": "nic002",
+              "user_email": "b@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001"
+            }
+          ]
+        },
+        {
+          "doc_code": 0,
+          "share_code": 0,
+          "current_approver": "장욱",
+          "approval_line_code": 0,
+          "send_user_id": {
+            "user_id": "nic001",
+            "user_email": "a@nictech.com",
+            "dept_code": "dept_001",
+            "position_code": "pos_0001"
+          },
+          "recv_user_ids": [
+            {
+              "user_id": "nic001",
+              "user_email": "a@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001"
+            },
+            {
+              "user_id": "nic002",
+              "user_email": "b@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001"
+            }
+          ]
+        }
+      ]
+    },
+    "processing": {
+      "listType": "completed",
+      "listCount": 1,
+      "listPageSize": 100,
+      "listPageNumber": 1,
+      "share_processing": [
+        {
+          "doc_code": 0,
+          "share_code": 0,
+          "current_approver": "장욱",
+          "approval_line_code": 0,
+          "recv_user_ids": [
+            {
+              "user_id": "nic001",
+              "user_email": "a@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001"
+            },
+            {
+              "user_id": "nic002",
+              "user_email": "b@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001"
+            }
+          ]
+        },
+        {
+          "doc_code": 0,
+          "share_code": 0,
+          "current_approver": "장욱",
+          "approval_line_code": 0,
+          "recv_user_ids": [
+            {
+              "user_id": "nic001",
+              "user_email": "a@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001"
+            },
+            {
+              "user_id": "nic002",
+              "user_email": "b@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001"
+            }
+          ]
+        }
+      ]
+    },
+    "completed": {
+      "listType": "completed",
+      "listCount": 1,
+      "listPageSize": 100,
+      "listPageNumber": 1,
+      "share_completed": [
+        {
+          "doc_code": 0,
+          "share_code": 0,
+          "current_approver": "장욱",
+          "approval_line_code": 0,
+          "recv_user_ids": [
+            {
+              "user_id": "nic001",
+              "user_email": "a@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001"
+            },
+            {
+              "user_id": "nic002",
+              "user_email": "b@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001"
+            }
+          ]
+        },
+        {
+          "doc_code": 0,
+          "share_code": 0,
+          "current_approver": "장욱",
+          "approval_line_code": 0,
+          "recv_user_ids": [
+            {
+              "user_id": "nic001",
+              "user_email": "a@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001"
+            },
+            {
+              "user_id": "nic002",
+              "user_email": "b@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001"
+            }
+          ]
+        }
+      ]
+    },
+    "rejected": {
+      "listType": "rejected",
+      "listCount": 1,
+      "listPageSize": 100,
+      "listPageNumber": 1,
+      "share_rejected": [
+        {
+          "doc_code": 0,
+          "share_code": 0,
+          "current_approver": "장욱",
+          "approval_line_code": 0,
+          "recv_user_ids": [
+            {
+              "user_id": "nic001",
+              "user_email": "a@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001",
+              "share_reject_reason": {}
+            },
+            {
+              "user_id": "nic002",
+              "user_email": "b@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001",
+              "share_reject_reason": {}
+            }
+          ]
+        },
+        {
+          "doc_code": 0,
+          "share_code": 0,
+          "current_approver": "장욱",
+          "approval_line_code": 0,
+          "recv_user_ids": [
+            {
+              "user_id": "nic001",
+              "user_email": "a@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001",
+              "share_reject_reason": {}
+            },
+            {
+              "user_id": "nic002",
+              "user_email": "b@nictech.com",
+              "dept_code": "dept_001",
+              "position_code": "pos_0001",
+              "share_reject_reason": {}
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

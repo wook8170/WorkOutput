@@ -1,0 +1,456 @@
+// header
+version n = 3.1
+dateTime d = 2014-06-25
+result = 0
+detatil = 
+
+// meta info
+metaShareStatus
+	share_status[0]
+		share_status_code n = 0
+		share_status_name = 결재 요청
+		share_status_description = 
+	share_status[1]
+		share_status_code n = 1
+		share_status_name = 결재 진행중
+		share_status_description = 
+	share_status[2]
+		share_status_code n = 2
+		share_status_name = 결재 완료
+		share_status_description = 
+	share_status[3]
+		share_status_code n = 3
+		share_status_name = 결재 반려
+		share_status_description = 
+
+metaPositionInfo
+	position_info[0]
+		position_code n = 0
+		position_name = 사원
+		position_description = 
+	position_info[1]
+		position_code n = 1
+		position_name = 대리
+		position_description = 
+	position_info[2]
+		position_code n = 2
+		position_name = 과장
+		position_description = 
+	position_info[3]
+		position_code n = 3
+		position_name = 차장
+		position_description = 
+	position_info[4]
+		position_code n = 4
+		position_name = 부장
+		position_description = 
+	position_info[5]
+		position_code n = 5
+		position_name = 이사
+		position_description = 
+	position_info[6]
+		position_code n = 6
+		position_name = 상무
+		position_description = 
+	position_info[7]
+		position_code n = 7
+		position_name = 전무
+		position_description = 
+	position_info[8]
+		position_code n = 8
+		position_name = 대표이사
+		position_description = 
+
+// approval line
+metaApprovalLine
+	listType = approvalLines
+	listCount number = 3
+	listPageSize number = 100
+	listPageNumber number = 1
+
+	approval_line_info[0]
+		approval_line_code n = 0
+		approval_line_person[0]				
+			user_id = nic001	  
+			user_email = a@nictech.com
+			dept_code = dept_001
+			position_code = pos_0001
+		approval_line_person[1]				
+			user_id = nic001	  
+			user_email = a@nictech.com
+			dept_code = dept_001
+			position_code = pos_0001
+		approval_line_person[2]				
+			user_id = nic001	  
+			user_email = a@nictech.com
+			dept_code = dept_001
+			position_code = pos_0001
+	approval_line_info[1]
+		approval_line_code n = 1
+		approval_line_person[0]				
+			user_id = nic001	  
+			user_email = a@nictech.com
+			dept_code = dept_001
+			position_code = pos_0001
+		approval_line_person[1]				
+			user_id = nic001	  
+			user_email = a@nictech.com
+			dept_code = dept_001
+			position_code = pos_0001
+		approval_line_person[0]				
+			user_id = nic001	  
+			user_email = a@nictech.com
+			dept_code = dept_001
+			position_code = pos_0001
+	approval_line_info[2]
+		approval_line_code n = 2
+		approval_line_person[0]				
+			user_id = nic001	  
+			user_email = a@nictech.com
+			dept_code = dept_001
+			position_code = pos_0001
+		approval_line_person[1]				
+			user_id = nic001	  
+			user_email = a@nictech.com
+			dept_code = dept_001
+			position_code = pos_0001
+		approval_line_person[2]				
+			user_id = nic001	  
+			user_email = a@nictech.com
+			dept_code = dept_001
+			position_code = pos_0001
+				
+	
+// organization
+
+// user info
+userInfo
+	tenant_id = t0001
+	user_email = a@nicstech.com
+	user_id = nics_001
+	user_name = jang wook
+	user_nick = 서윤이 아빠
+	user_telno = 010-2808-8170
+	dept_code = dept_001
+	policy_code = pol_001
+	position_code = pos_001
+	group_codes[] = dept_001, dept_002, dept_003
+	user_is_approval bool = true
+	approval_line_code n = app_001
+	transaction_id n = 123456
+	transaction_code n = 00010
+	transaction_time d = 2014-06-25  
+
+
+// private
+private
+	listType = private
+	listCount number = 3
+	listPageSize number = 100
+	listPageNumber number = 1
+	doc[0]
+		doc_code number = 0
+		doc_name = xxx.docx
+		doc_url = https://xxx.xxx.xxx/xxx
+		doc_create_date d = 2014-06-25
+		doc_modify_time d = 2014-06-25
+		doc_size number = 100
+		doc_security_result bool = true
+		doc_is_deleted bool = false
+		doc_share_count number = 10
+		doc_download_count number = 10
+		is_favorite bool = false
+	doc[1]
+		doc_code number = 1
+		doc_name = xxx.docx
+		doc_url = https://xxx.xxx.xxx/xxx
+		doc_create_date d = 2014-06-25
+		doc_modify_time d = 2014-06-25
+		doc_size number = 100
+		doc_security_result bool = true
+		doc_is_deleted bool = false
+		doc_share_count number = 10
+		doc_download_count number = 10
+		is_favorite bool = false
+	doc[2]
+		doc_code number = 2
+		doc_name = xxx.docx
+		doc_url = https://xxx.xxx.xxx/xxx
+		doc_create_date d = 2014-06-25
+		doc_modify_time d = 2014-06-25
+		doc_size number = 100
+		doc_security_result =bool true
+		doc_is_deleted bool = false
+		doc_share_count number = 10
+		doc_download_count number = 10
+		is_favorite bool = false
+	doc[3]
+		doc_code number = 3
+		doc_name = xxx.docx
+		doc_url = https://xxx.xxx.xxx/xxx
+		doc_create_date d = 2014-06-25
+		doc_modify_time d = 2014-06-25
+		doc_size number = 100
+		doc_security_result bool = true
+		doc_is_deleted bool = false
+		doc_share_count number = 10
+		doc_download_count number = 10
+		is_favorite bool = false
+
+// inbox
+inBox
+	listType = inBox
+	listCount number = 2
+	listPageSize number = 100
+	listPageNumber number = 1  
+	doc[0]
+		doc_code number = 3
+		doc_name = xxx.docx
+		doc_url = https://xxx.xxx.xxx/xxx
+		doc_create_date d = 2014-06-25
+		doc_modify_time d = 2014-06-25
+		doc_size number d = 100
+		is_favorite bool = false
+		share_code number n = 0
+		share_status_code n = 0
+		share_alarm_read n = 0
+		sender  
+			send_user_id = nic001
+			user_email = a@nictech.com
+			dept_code = dept_001
+			position_code = pos_0001
+		approval_line_code n = 0
+	doc[1]
+		doc_code number = 3
+		doc_name = xxx.docx
+		doc_url = https://xxx.xxx.xxx/xxx
+		doc_create_date d = 2014-06-25
+		doc_modify_time d = 2014-06-25
+		doc_size number d = 100
+		is_favorite bool = false
+		share_code number n = 0
+		share_status_code n = 0
+		share_alarm_read n = 0
+		sender  
+			send_user_id = nic001
+			user_email = a@nictech.com
+			dept_code = dept_001
+			position_code = pos_0001  
+		approval_line_code n = 0
+// out box          
+outBox
+	listType = outBox
+	listCount number = 2
+	listPageSize number = 100
+	listPageNumber number = 1  
+	doc[0]
+		doc_code number = 3
+		doc_name = xxx.docx
+		doc_url = https://xxx.xxx.xxx/xxx
+		doc_create_date d = 2014-06-25
+		doc_modify_time d = 2014-06-25
+		doc_size number d = 100
+		is_favorite bool = false
+		share_code number n = 0
+		share_status_code n = 0
+		share_alarm_read n = 0         
+		current_approver = 장욱
+		approval_line_code n = 0
+		recv_user_ids[0] 			
+			user_id = nic001	  
+			user_email = a@nictech.com
+			dept_code = dept_001
+			position_code = pos_0001
+		recv_user_ids[1]
+			user_id = nic002
+			user_email = b@nictech.com
+			dept_code = dept_001
+			position_code = pos_0001
+	doc[1]
+		doc_code number = 3
+		doc_name = xxx.docx
+		doc_url = https://xxx.xxx.xxx/xxx
+		doc_create_date d = 2014-06-25
+		doc_modify_time d = 2014-06-25
+		doc_size number = 100
+		is_favorite bool = false
+		share_code number n = 0
+		share_status_code n = 0
+		share_alarm_read n = 0
+		external_user  
+			external_user_id = nic001
+			external_user_email = a@kukudocs.com
+		current_approver = 장욱
+		approval_line_code n = 0
+ 
+// alarm
+alarm
+	requested
+		listType = requested
+		listCount number = 1
+		listPageSize number = 100
+		listPageNumber number = 1  
+
+		share_request[0]		
+			doc_code n = 0
+			share_code n = 0
+			current_approver = 장욱
+			approval_line_code n = 0
+			send_user_id 
+				user_id = nic001
+				user_email = a@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+			recv_user_ids[0]       
+				user_id = nic001
+				user_email = a@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+			recv_user_ids[1]
+				user_id = nic002
+				user_email = b@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+		share_request[1]
+			doc_code n = 0
+			share_code n = 0
+			current_approver = 장욱
+			approval_line_code n = 0
+			send_user_id 
+				user_id = nic001
+				user_email = a@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+			recv_user_ids[0]       
+				user_id = nic001
+				user_email = a@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+			recv_user_ids[1]
+				user_id = nic002
+				user_email = b@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+	processing
+		listType = completed
+		listCount number = 1
+		listPageSize number = 100
+		listPageNumber number = 1  
+
+		share_processing[0]	
+			doc_code n = 0
+			share_code n = 0
+			current_approver = 장욱
+			approval_line_code n = 0
+			current_approver
+				user_id = nic001
+				user_email = a@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+			recv_user_ids[0]       
+				user_id = nic001
+				user_email = a@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+			recv_user_ids[1]
+				user_id = nic002
+				user_email = b@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+		share_processing[1]	
+			doc_code n = 0
+			share_code n = 0
+			current_approver = 장욱
+			approval_line_code n = 0
+			current_approver
+				user_id = nic001
+				user_email = a@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+			recv_user_ids[0]       
+				user_id = nic001
+				user_email = a@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+			recv_user_ids[1]
+				user_id = nic002
+				user_email = b@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+
+	completed
+		listType = completed
+		listCount number = 1
+		listPageSize number = 100
+		listPageNumber number = 1  
+		share_completed[0]	
+			doc_code n = 0
+			share_code n = 0
+			current_approver = 장욱
+			approval_line_code n = 0
+			recv_user_ids[0]       
+				user_id = nic001
+				user_email = a@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+			recv_user_ids[1]
+				user_id = nic002
+				user_email = b@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+		share_completed[1]	
+			doc_code n = 0
+			share_code n = 0
+			current_approver = 장욱
+			approval_line_code n = 0
+			recv_user_ids[0]       
+				user_id = nic001
+				user_email = a@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+			recv_user_ids[1]
+				user_id = nic002
+				user_email = b@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+	rejected
+		listType = rejected
+		listCount number = 1
+		listPageSize number = 100
+		listPageNumber number = 1  
+
+		share_rejected[0]	
+			doc_code n = 0
+			share_code n = 0
+			current_approver = 장욱
+			approval_line_code n = 0
+			recv_user_ids[0]       
+				user_id = nic001
+				user_email = a@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+				share_reject_reason = 
+			recv_user_ids[1]
+				user_id = nic002
+				user_email = b@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+				share_reject_reason = zz
+		share_rejected[1]	
+			doc_code n = 0
+			share_code n = 0
+			current_approver = 장욱
+			approval_line_code n = 0
+			recv_user_ids[0]       
+				user_id = nic001
+				user_email = a@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+				share_reject_reason =
+			recv_user_ids[1]
+				user_id = nic002
+				user_email = b@nictech.com
+				dept_code = dept_001
+				position_code = pos_0001
+				share_reject_reason = zz
+		

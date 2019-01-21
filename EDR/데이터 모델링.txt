@@ -1,0 +1,117 @@
+[process creation log] - 기본 정보
+	"User": "DESKTOP-WJANG\\wook8170" ->사용자 PC 식별
+	"ProcessGuid": "{A376A8F6-F294-5A9C-0000-001052E48503}",
+	"UtcTime": "2018-03-05 07:24:10.147",
+	"ProcessId": "5708", -> 로그 항목에 대한 key
+	"Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+	"CommandLine": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" http://google.co.kr/",
+	"Hashes": "MD5=22819EB3C648583352AE83003E4C9A56,SHA256=4B69AE5B7D548EFC56FDBE2E650CE2B519AE0C9C928640023077B956C51A7138",
+	"ParentProcessId": "24128",    
+	"ParentImage": "C:\\Windows\\System32\\RuntimeBroker.exe",
+	"ParentCommandLine": "C:\\Windows\\System32\\RuntimeBroker.exe -Embedding",    
+    
+->"ProcessId"로는 프로세스를 유일하게 식별할 수 없기 때문에  "ProcessGuid" 값과 조함 필요(아니면 guid만 사용)
+->"User", "ParentProcessId", "ParentImage", "ProcessId", "Image"  항목을 이용하여 특정 PC에서의 프로세스의 생성에 대한 tree를 구성할 수 있음(parent, child)
+->"UtcTime" 항목과 조합하면 process 생성 tree를 timeline 형식으로 구성 가능
+->"Hashes" 항목을 통해 각 실행 파일에 대한 hash를 기반으로 악성 프로그램 탐지 가능(virus total 등)
+->Image 항목을 통해 특정 위치에서 실행되는 프로세스 탐지 가능
+->"CommandLine" 항목을 통해 powershell 등에 전달되는 parameter로 스크립트 실행 여부 탐지 가능
+->프로세스간의 종속관계에서 parent, 또는 child 프로세스가 생성된 후 네트웍에 연결할 때 프로세스 id를 key 아래 network connection 정보로
+  이상 행위 탐지 가능
+->process creation 정보는 모든 탐지의 기본 정보
+
+[file creation time] -> 중요도 높음 악성 행위에 대한 추적을 막기위해 파일 수정 시간 변경
+	"CreationUtcTime": "2017-04-24 03:51:05.300",
+    "PreviousCreationUtcTime": "2018-03-05 07:25:49.952",
+    "UtcTime": "2018-03-05 07:25:49.971",
+    "ProcessGuid": "{A376A8F6-ECC2-5A9C-0000-0010E1111D00}",
+    "ProcessId": "17568",
+    "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+    "TargetFilename": "C:\\Users\\wook8170\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\CustomDestinations\\JIMMG587JA65SLJ1SYZD.temp"
+	
+-> "PreviousCreationUtcTime" 항목과 "CreationUtcTime" 을 비교하여 실제 파일 변경되었으나 변경되지 않은 것 처럼 보이게 하는 행위 탐지 가능
+-> 또는 변경되지 말아야 햐난 파일의 변경 추적 가능
+-> "ProcessGuid"를 이용하여 위와 같은 행위를 하는 프로세스(모듈) 식별
+-> image loaded 2 CreationUtcTime  과 파일 file creation time 의 "CreationUtcTime" 항목을 이용하여 file 생성 부터 수정에 대한 timeline 구성 가능
+
+[network connection] 중요도 높음, 특정 프로세스의 네트웍 행위(특정 IP로 접속을 시도하는 등) 추적
+    "SourceHostname": "DESKTOP-WJANG",    
+	"ProcessGuid": "{A376A8F6-ECC2-5A9C-0000-0010E1111D00}",	
+    "ProcessId": "17568",
+	"Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+	"Protocol": "tcp",
+	"SourceIp": "192.168.198.67",
+	"SourcePort": "2199",
+	"DestinationIp": "216.58.200.3",
+    "DestinationPort": "443",    
+    "DestinationPortName": "https",
+    
+->"ProcessId"로는 프로세스를 유일하게 식별할 수 없기 때문에  "ProcessGuid" 값과 조함 필요(아니면 guid만 사용)
+-> 만약 네트웍에 연결되는 process가 exploer.exe등의 네트웍 연결 이유가 없는 프로세스일 경우 비정상적인 network 접속으로 탐지 가능
+-> 악성 프로그램의("ProcessGuid" 사용) 경우 특정 목적지 포트 및 특정 IP로 정보를 보내는 경우가 있어 목적지 네트웍 정보로 탐기 가능("ProcessGuid" + "source*" + "destination*")
+
+[process terminate]
+	"UtcTime": "2018-03-05 07:24:10.322",
+    "ProcessGuid": "{A376A8F6-F09A-5A9C-0000-00107EE13802}",
+    "ProcessId": "5708",
+    "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+
+	-> ProcessGuid 와 UtcTime 을 이용하여 특정 프로세스의 종료 관련 timeline 구성 가능
+	-> ProcessGuid를 이용하여 중요 프로세스 또는 시스템 프로세스의 임의 종료 여부 확인 가능
+	->프로세스 creation data의 "UtcTime" 과 종료의 "UtcTime" 을 이용하여 프로세스의 life cycle 구성 가능
+	
+[image loaded 1]	 -> 중요도 높음 dll injection 및 서명되지 않은(의심스러운) dll의 로드 탐지
+    "Signed": "true",
+    "ProcessId": "17704",
+    "UtcTime": "2018-03-05 07:32:36.738",
+    "ProcessGuid": "{A376A8F6-F294-5A9C-0000-001052E48503}",        
+    "SignatureStatus": "Valid",
+    "Image": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+    "Company": "Microsoft Corporation",
+    "Hashes": "MD5=222A8E8EA615529B5025DE5782830AF1,SHA256=7C76BB7AEC3C51164A49041E8A710C3C291BA1D30BAE07D126434A52A80D99E1",
+    "ImageLoaded": "C:\\Windows\\System32\\kernel32.dll",
+    "Description": "Windows NT 기반 API 클라이언트 DLL"
+	
+	"Signed", "SignatureStatus" 항목으로 로드되는 dll의 서명 여부 및 서명의 유효성 탐지 가능
+    "Hashes" 항목을 이용하여 로드되는 dll의 injection  여부 악성 모듈 여부 확인 가능(virustotal 등 이용)
+	"ProcessGuid" "UtcTime" "ImageLoaded" 를 이용하여 실행 프로세스에 attach 되는 dll의 timeline 구성 가능
+	"
+	
+[image loaded 2]		
+	"ProcessId": "24360",
+    "Image": "C:\\WINDOWS\\explorer.exe",
+    "TargetFilename": "K:\\cc - 복사본 (2).txt",
+    "CreationUtcTime": "2018-03-05 07:27:50.280",
+    "UtcTime": "2018-03-05 07:27:50.291",
+    "ProcessGuid": "{A376A8F6-EF7D-5A9C-0000-0010537B8601}"
+	
+"ProcessGuid" 및 "CreationUtcTime", "TargetFilename" 을 이용하여 파일 접근에 대한 모니터링 및 탐지 가능
+
+[registry event - 생성, 삭제]
+	"ProcessId": "19128",
+    "Image": "C:\\WINDOWS\\regedit.exe",
+    "TargetObject": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\새 키 #1",
+    "EventType": "CreateKey",
+    "UtcTime": "2018-03-05 07:43:03.093",
+    "ProcessGuid": "{A376A8F6-F4E7-5A9C-0000-001010A5C804}"
+	
+	"ProcessGuid", "EventType", "TargetObject" 항목을 이용하여 특정 프로세스의 레지스트리 생성 및 삭제 탐지 가능(서버 IP등을 저장하기 위해 생성 및 사용 후 삭제 등)	
+	"ProcessGuid" 정보를 통해 레지스트리에 대한 생성 및 삭제를 시도하는 프로세스 식별 가능하나 regedit.exe 를 통해 해당 행위가 이루어질 수 있기 때문에
+	[process creation log]프로세스 생성 정보를 통해 parent process 까지 추적 필요
+	"ProcessGuid", "EventType", "TargetObject"  항목을 통해 중요 레지스트리의 삭제에 대한 추적 가능
+		
+
+[registry event - 값 변경]
+    "Image": "C:\\WINDOWS\\regedit.exe",
+    "TargetObject": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\새 값 #1",
+    "Details": "(Empty)",
+    "EventType": "SetValue",
+    "UtcTime": "2018-03-05 07:43:08.639",
+    "ProcessGuid": "{A376A8F6-F4E7-5A9C-0000-001010A5C804}",
+    "ProcessId": "19128"
+
+	"ProcessGuid", "EventType", "TargetObject" 항목을 이용하여 특정 프로세스의 레지스트리 값 변경(windows registry run key 등에 자동 실행 등록 여부 확인 및 HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders 모듈 등록 등)
+	"ProcessGuid" 정보를 통해 레지스트리에 대한 생성 및 삭제를 시도하는 프로세스 식별 가능하나 regedit.exe 를 통해 해당 행위가 이루어질 수 있기 때문에
+	[process creation log]프로세스 생성 정보를 통해 parent process 까지 추적 필요
+	"ProcessGuid", "EventType", "TargetObject"  항목을 통해 중요 레지스트리의 변경에 대한 추적 가능
+	

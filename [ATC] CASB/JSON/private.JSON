@@ -1,0 +1,64 @@
+{
+  "serverVersion": "0.0.1",
+  "dateTime": "2014-06-25T00:00:00:000Z",
+  "result": "0",
+  "detatil": "",
+  "listType": "private",
+  "listCount": 1,
+  "listPageSize": 100,
+  "listPageNumber": 1,
+  "docList": [
+    {
+      "doc_code": 0,
+      "doc_name": "xxx.docx",
+      "doc_url": "https://xxx.xxx.xxx/xxx",
+      "doc_create_date": "2014-06-25T00:00:00:000Z",
+      "doc_modify_time": "2014-06-25T00:00:00:000Z",
+      "doc_size": 100,
+      "doc_security_result": true,
+      "doc_is_deleted": false,
+      "doc_share_count": 10,
+      "doc_download_count": "10",
+      "view_url": "https://yyy.yyy.yyy/yyy"
+    },
+    {
+      "doc_code": 1,
+      "doc_name": "xxx.docx",
+      "doc_url": "https://xxx.xxx.xxx/xxx",
+      "doc_create_date": "2014-06-25T00:00:00:000Z",
+      "doc_modify_time": "2014-06-25T00:00:00:000Z",
+      "doc_size": 100,
+      "doc_security_result": true,
+      "doc_is_deleted": false,
+      "doc_share_count": 10,
+      "doc_download_count": "10",
+      "view_url": "https://yyy.yyy.yyy/yyy"
+    },
+    {
+      "doc_code": 2,
+      "doc_name": "xxx.docx",
+      "doc_url": "https://xxx.xxx.xxx/xxx",
+      "doc_create_date": "2014-06-25T00:00:00:000Z",
+      "doc_modify_time": "2014-06-25T00:00:00:000Z",
+      "doc_size": 100,
+      "doc_security_result": true,
+      "doc_is_deleted": false,
+      "doc_share_count": 10,
+      "doc_download_count": "10",
+      "view_url": "https://yyy.yyy.yyy/yyy"
+    },
+    {
+      "doc_code": 3,
+      "doc_name": "xxx.docx",
+      "doc_url": "https://xxx.xxx.xxx/xxx",
+      "doc_create_date": "2014-06-25T00:00:00:000Z",
+      "doc_modify_time": "2014-06-25T00:00:00:000Z",
+      "doc_size": 100,
+      "doc_security_result": true,
+      "doc_is_deleted": false,
+      "doc_share_count": 10,
+      "doc_download_count": "10",
+      "view_url": "https://yyy.yyy.yyy/yyy"
+    }
+  ]
+}
